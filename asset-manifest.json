@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/travel-the-world/static/css/main.20d3a38c.css",
-    "main.js": "/travel-the-world/static/js/main.3322f691.js",
+    "main.css": "/travel-the-world/static/css/main.2e241923.css",
+    "main.js": "/travel-the-world/static/js/main.4c733778.js",
     "index.html": "/travel-the-world/index.html",
-    "main.20d3a38c.css.map": "/travel-the-world/static/css/main.20d3a38c.css.map",
-    "main.3322f691.js.map": "/travel-the-world/static/js/main.3322f691.js.map"
+    "main.2e241923.css.map": "/travel-the-world/static/css/main.2e241923.css.map",
+    "main.4c733778.js.map": "/travel-the-world/static/js/main.4c733778.js.map"
   },
   "entrypoints": [
-    "static/css/main.20d3a38c.css",
-    "static/js/main.3322f691.js"
+    "static/css/main.2e241923.css",
+    "static/js/main.4c733778.js"
   ]
 }
