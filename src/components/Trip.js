@@ -2,12 +2,6 @@
 import React from 'react';
 import './Trip.css';
 
-const trips = [
-  { title: "Wasserwerk Frelberg, Germany", rating: 4.2, price: 300, image: "assets/trip-1.jpg" },
-  { title: "Patagonia, Argentina and Chile", rating: 4.5, price: 450, image: "assets/trip-2.jpg" },
-  { title: "The Dolomites, Italy", rating: 4.7, price: 400, image: "assets/trip-3.jpg" }
-];
-
 const Trip = () => {
   return (
     <section className="trip">
@@ -18,19 +12,39 @@ const Trip = () => {
           find your right destination.
         </p>
         <div className="trip__grid">
-          {trips.map((trip, index) => (
-            <div className="trip__card" key={index}>
-              <img src={trip.image} alt="trip" />
-              <div className="trip__details">
-                <p>{trip.title}</p>
-                <div className="rating"><i className="ri-star-fill"></i> {trip.rating}</div>
-                <div className="booking__price">
-                  <div className="price"><span>From</span> ${trip.price}</div>
-                  <button className="book__now">Book Now</button>
-                </div>
+          <div className="trip__card">
+            <img src="assets/trip-1.jpg" alt="trip" />
+            <div className="trip__details">
+              <p>Wasserwerk Frelberg, Germany</p>
+              <div className="rating"><i className="ri-star-fill"></i> 4.2</div>
+              <div className="booking__price">
+                <div className="price"><span>From</span> $300</div>
+                <button className="book__now">Book Now</button>
               </div>
             </div>
-          ))}
+          </div>
+          <div className="trip__card">
+            <img src="assets/trip-2.jpg" alt="trip" />
+            <div className="trip__details">
+              <p>Patagonia, Argentina and Chile</p>
+              <div className="rating"><i className="ri-star-fill"></i> 4.5</div>
+              <div className="booking__price">
+                <div className="price"><span>From</span> $450</div>
+                <button className="book__now">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div className="trip__card">
+            <img src="assets/trip-3.jpg" alt="trip" />
+            <div className="trip__details">
+              <p>The Dolomites, Italy</p>
+              <div className="rating"><i className="ri-star-fill"></i> 4.7</div>
+              <div className="booking__price">
+                <div className="price"><span>From</span> $400</div>
+                <button className="book__now">Book Now</button>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="view__all">
           <button className="btn">View All</button>

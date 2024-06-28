@@ -1,6 +1,7 @@
 // src/App.js
 import React from 'react';
 import './App.css';
+import './index';
 import NavBar from './components/NavBar';
 import Header from './components/Header';
 import Destination from './components/Destination';

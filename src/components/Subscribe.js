@@ -13,10 +13,12 @@ const Subscribe = () => {
             can find your right destination.
           </p>
         </div>
-        <form className="subscribe__form">
-          <input type="text" placeholder="Enter your email address" />
-          <button className="btn">Subscribe Now</button>
-        </form>
+        <div className="subscribe__form">
+          <form>
+            <input type="email" placeholder="Your email here" />
+            <button className="btn" type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </section>
   );

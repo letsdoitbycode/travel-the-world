@@ -2,12 +2,6 @@
 import React from 'react';
 import './Destination.css';
 
-const destinations = [
-  { title: "Banff", subtitle: "Canada", image: "assets/destination-1.jpg" },
-  { title: "Machu Picchu", subtitle: "Peru", image: "assets/destination-2.jpg" },
-  { title: "Lauterbrunnen", subtitle: "Switzerland", image: "assets/destination-3.jpg" },
-  { title: "Zhangjiajie", subtitle: "China", image: "assets/destination-4.jpg" }
-];
 
 const Destination = () => {
   return (
@@ -26,17 +20,37 @@ const Destination = () => {
         </div>
       </div>
       <div className="destination__grid">
-        {destinations.map((dest, index) => (
-          <div className="destination__card" key={index}>
-            <img src={dest.image} alt="destination" />
-            <div className="destination__details">
-              <p className="destination__title">{dest.title}</p>
-              <p className="destination__subtitle">{dest.subtitle}</p>
-            </div>
+        <div className="destination__card">
+          <img src="assets/destination-1.jpg" alt="destination" />
+          <div className="destination__details">
+            <p className="destination__title">Banff</p>
+            <p className="destination__subtitle">Canada</p>
           </div>
-        ))}
+        </div>
+        <div className="destination__card">
+          <img src="assets/destination-2.jpg" alt="destination" />
+          <div className="destination__details">
+            <p className="destination__title">Machu Picchu</p>
+            <p className="destination__subtitle">Peru</p>
+          </div>
+        </div>
+        <div className="destination__card">
+          <img src="assets/destination-3.jpg" alt="destination" />
+          <div className="destination__details">
+            <p className="destination__title">Lauterbrunnen</p>
+            <p className="destination__subtitle">Switzerland</p>
+          </div>
+        </div>
+        <div className="destination__card">
+          <img src="assets/destination-4.jpg" alt="destination" />
+          <div className="destination__details">
+            <p className="destination__title">Zhangjiajie</p>
+            <p className="destination__subtitle">China</p>
+          </div>
+        </div>
       </div>
     </section>
+
   );
 };
 
